@@ -1,0 +1,11 @@
+.comming-soon-body{
+background-color: aqua;
+height: 100vh;
+
+}
+.comming-soon-text{
+font-size: 50px;
+text-align: center;
+position: relative;
+top: 300px;
+}

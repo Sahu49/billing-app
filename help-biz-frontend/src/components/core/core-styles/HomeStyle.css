@@ -1,0 +1,83 @@
+.homeBody {
+}
+.homeBody .controlPanel {
+  display: flex;
+  width: 300px;
+  height: auto;
+}
+.homeBody .controlPanel .leftColumn {
+  width: 300px;
+  /* display: flex; */
+  margin: auto;
+}
+.homeBody .controlPanel .leftColumn .item1 {
+  /* margin: 5px; */
+
+  text-align: center;
+  background-color: #35bdd0;
+  border: 1px solid white;
+  color: white;
+  padding: 6px;
+}
+.homeBody .controlPanel .leftColumn .item1:hover {
+  background-color: white;
+  border: 1px solid #35bdd0;
+  color: #35bdd0;
+}
+
+/* if user is not logged in  */
+.homeNotLoggedIn {
+  background-color: #35bdd0;
+  /* width: 99vw; */
+  height: 85vh;
+}
+.homeNotLoggedIn .message {
+  font-size: 40px;
+  padding-top: 200px;
+  text-align: center;
+  color: white;
+}
+
+/* mobile view  */
+@media (max-width: 440px) {
+  .homeBody {
+  }
+  .homeBody .controlPanel {
+    display: flex;
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+  }
+  .homeBody .controlPanel .leftColumn {
+    width: 300px;
+    /* display: flex; */
+    margin: auto;
+  }
+  .homeBody .controlPanel .leftColumn .item1 {
+    /* margin: 5px; */
+
+    text-align: center;
+    background-color: #35bdd0;
+    border: 1px solid white;
+    color: white;
+    padding: 6px;
+  }
+  .homeBody .controlPanel .leftColumn .item1:hover {
+    background-color: white;
+    border: 1px solid #35bdd0;
+    color: #35bdd0;
+  }
+
+  /* if user is not logged in  */
+  .homeNotLoggedIn {
+    background-color: #35bdd0;
+    /* width: 99vw; */
+    height: 85vh;
+  }
+  .homeNotLoggedIn .message {
+    font-size: 40px;
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+  }
+}

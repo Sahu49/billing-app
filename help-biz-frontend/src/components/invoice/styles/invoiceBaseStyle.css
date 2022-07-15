@@ -1,0 +1,17 @@
+.invoiceBaseBody {
+  display: flex;
+}
+.saveButton {
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin-left: 30px;
+  background-color: greenyellow;
+  color: white;
+  font-size: 25px;
+}
+.saveButton:hover {
+  border: 1px solid greenyellow;
+  background-color: white;
+  color: yellowgreen;
+}

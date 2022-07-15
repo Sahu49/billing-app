@@ -1,0 +1,14 @@
+.nav-body {
+  background-color: rgb(241, 241, 241);
+  padding-bottom: 10px;
+}
+.nav-body .nav-link {
+  text-decoration: none;
+  font-size: 25px;
+
+  padding: 10px;
+}
+
+.nav-link :hover {
+  font-weight: 500;
+}

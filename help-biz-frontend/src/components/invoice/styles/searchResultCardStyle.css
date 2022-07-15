@@ -1,0 +1,7 @@
+.cardRow {
+  width: 1200px;
+  display: flex;
+}
+.cardRow .col {
+  text-align: center;
+}

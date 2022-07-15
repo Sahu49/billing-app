@@ -1,0 +1,63 @@
+.search-box{
+    padding: 5px;
+    background-color: rgb(55, 119, 174);
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.search-box input{
+border: none;
+border-radius: 4px;
+padding: 5px;
+margin: 5px;
+}
+.search-box button{
+    border: none;
+margin: 5px;
+color: white;
+    background-color: green;
+}
+.invoices-list{
+    /* background-color: rgb(128, 224, 225); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* here shop list cards------------------ */
+.invoices-list .list-item{
+
+    margin: 6px;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(41, 221, 206);
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    
+}
+.invoices-list .list-item .shop-name{
+    /* width: 150px; */
+    font-size: 26px;
+    word-spacing: 3px;
+    background-color: rgb(255, 255, 120);
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.invoices-list .list-item .shop-email{
+    /* width: 150px; */
+    padding: 10px;
+    
+}
+.invoices-list .list-item .date{
+    /* width: 150px; */
+    padding: 10px;
+    
+}
+.invoices-list .list-item .spant{
+    /* width: 150px; */
+    padding: 10px;
+    
+}
