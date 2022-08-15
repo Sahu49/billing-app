@@ -32,3 +32,14 @@
   border: none;
   width: 100px;
 }
+.error-message{
+  background-color: rgb(235, 0, 0);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.error-message span{
+  padding: 10px;
+  cursor: pointer;
+}

@@ -2,13 +2,20 @@ import React, { useState, useEffect } from 'react'
 import { isAuthenticated } from '../../auth/authHelper'
 import "../styles/invoiceForm.css"
 
+
 function CreateInvoiceForm({ data, setData }) {
+    const [totalCost, setTotalCost] = useState(0)
     const [item, setItem] = useState({
         name: "",
         price: "",
         qty: "",
         total: "",
         tt: ""
+    })
+
+    const [errorMessage, setErrorMessage] = useState({
+        isError: false,
+        message:""
     })
 
     useEffect(() => {
@@ -20,7 +27,16 @@ function CreateInvoiceForm({ data, setData }) {
     }, [])
     const pushItemToMainState = () => {
 
+        if(!item.name || !item.price || !item.qty)
+        {
+            setErrorMessage({
+                isError:true,
+                message: "Fields can't be empty"
+            })
+            return;
+        }
         const t = (parseInt(item.price) * parseInt(item.qty))
+        console.log("this is total " + t)
         setItem({ ...item, tt: t })
         console.log(item)
 
@@ -52,6 +68,15 @@ function CreateInvoiceForm({ data, setData }) {
             </div>
         )
     }
+
+    const showError = (message) =>{
+        return (
+          <div className='error-message'>
+            <span>{message}</span>
+            <span onClick={()=>{setErrorMessage({isError:false, message:""})}}>X</span>
+          </div>
+        );
+    }
     const addItemForm = () => {
         return (
             <div className="addItemForm">
@@ -66,6 +91,7 @@ function CreateInvoiceForm({ data, setData }) {
     return (
         <div className="invoiceFormBody">
             {customerDetailsForm()}
+            {errorMessage.isError && showError(errorMessage.message)}
             {addItemForm()}
         </div>
     )
